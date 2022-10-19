@@ -1,0 +1,72 @@
+timgm6mb-soundfont (1.3-5) unstable; urgency=medium
+
+  * Team upload.
+  * Avoid rare error in prerm (Closes: #984592)
+
+ -- Thorsten Glaser <tg@mirbsd.de>  Fri, 12 Mar 2021 20:43:31 +0100
+
+timgm6mb-soundfont (1.3-4) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Fabian Greffrath ]
+  * Replace Homepage field with the closest match still available
+    today.
+  * Add origin for the licensing information to debian/copyright.
+  * Move MIDI rendering packages from Suggests to Enhances.
+
+  [ Olivier Humbert ]
+  * Update copyright (http -> https)
+
+  [ Debian Janitor ]
+  * Use secure URI in Homepage field.
+  * Bump debhelper from old 9 to 12.
+
+  [ Fabian Greffrath ]
+  * Add David Bolton to the upstream Copyright holders and change the
+    Source line to point to his latest commit to the sound font.
+
+ -- Fabian Greffrath <fabian@debian.org>  Fri, 21 Aug 2020 21:51:35 +0200
+
+timgm6mb-soundfont (1.3-3) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Fabian Greffrath ]
+  * Add "Multi-Arch: foreign" field.
+
+  [ Ondřej Nový ]
+  * d/copyright: Use https protocol in Format field
+  * d/control: Set Vcs-* to salsa.debian.org
+
+  [ Felipe Sateler ]
+  * Change maintainer address to debian-multimedia@lists.debian.org
+
+  [ Ondřej Nový ]
+  * d/rules: Remove trailing whitespaces
+  * Use debhelper-compat instead of debian/compat
+
+  [ Fabian Greffrath ]
+  * Make timgm6mb-soundfont Provides two new virtual packages
+    “sf2-soundfont-gm” and “sf3-soundfont-gm” and register
+    itself with priority 20 for the alternatives
+    /usr/share/sounds/sf2/default-GM.sf2 and …/sf3/default-GM.sf3
+    for the new “default soundfont” scheme discussed in #929185.
+
+ -- Fabian Greffrath <fabian@debian.org>  Fri, 02 Aug 2019 16:14:43 +0200
+
+timgm6mb-soundfont (1.3-2) unstable; urgency=high
+
+  * Team upload.
+  * Point Vcs-Git field in debian/control to the correct location.
+  * Add versioned Breaks and Replaces against musescore-soundfont-gm (<< 2)
+    (Closes: #793961). This is an RC-bug, thus urgency=high.
+
+ -- Fabian Greffrath <fabian@debian.org>  Thu, 27 Aug 2015 10:21:11 +0200
+
+timgm6mb-soundfont (1.3-1) unstable; urgency=low
+
+  [ Toby St Clere Smithe ]
+  * Initial release (Closes: #781263, #715462)
+
+ -- Tiago Bortoletto Vaz <tiago@debian.org>  Wed, 17 Jun 2015 09:26:37 -0400
